@@ -1,0 +1,4 @@
+name: ElysiaTeleport
+version: '1.0'
+main: elysia.ElysiaTeleport
+load: STARTUP

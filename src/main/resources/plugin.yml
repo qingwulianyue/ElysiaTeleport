@@ -1,0 +1,4 @@
+name: ElysiaTeleport
+version: '${project.version}'
+main: elysia.ElysiaTeleport
+load: STARTUP
