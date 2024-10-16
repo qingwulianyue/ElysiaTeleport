@@ -23,7 +23,6 @@ public class ConfigManager {
         Instance.reloadConfig();
         FileConfiguration config = Instance.getConfig();
         HashMap<String,String> messages = new HashMap<>();
-        messages.put("reload",config.getString("messages.reload"));
         messages.put("onOpen",config.getString("messages.onOpen"));
         messages.put("onTeleport",config.getString("messages.onTeleport"));
         configData = new ConfigData(

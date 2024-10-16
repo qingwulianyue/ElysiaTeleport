@@ -1,7 +1,7 @@
 package elysia.command.subcommands;
 
 import elysia.ElysiaTeleport;
-import elysia.GuiManager;
+import elysia.gui.GuiManager;
 import org.bukkit.Bukkit;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
@@ -21,5 +21,8 @@ public class OpenCommand {
             return;
         }
         new GuiManager(player.getUniqueId(),id).createGui();
+        commandSender.sendMessage((ElysiaTeleport.getConfigManager().getConfigData().getPrefix() + ElysiaTeleport.getConfigManager().getConfigData().getMessages().get("onOpen")
+                .replaceAll("%group%",id))
+                .replaceAll("&","§"));
     }
 }

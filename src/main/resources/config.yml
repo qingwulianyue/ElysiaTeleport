@@ -6,6 +6,5 @@ prefix: "&6[传送锚点]"
 
 # 消息
 messages:
-  reload: "&a插件配置重载成功！"
   onOpen: "&a打开 %group% 传送界面"
   onTeleport: "&a成功传送至 %id%"

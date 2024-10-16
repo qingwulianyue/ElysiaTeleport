@@ -45,7 +45,8 @@ public class WaypointsManager {
                         secondKey,
                         config.getString(firstKey + "." + secondKey + ".coordinate"),
                         config.getString(firstKey + "." + secondKey + ".world"),
-                        config.contains(firstKey + "." + secondKey + ".permission")?config.getString(firstKey + "." + secondKey + ".permission"):null
+                        config.contains(firstKey + "." + secondKey + ".permission")?config.getString(firstKey + "." + secondKey + ".permission"):null,
+                        config.contains(firstKey + "." + secondKey + ".permission")?config.getStringList(firstKey + "." + secondKey + ".permission"):null
                 );
                 waypointsDataList.add(waypointsData);
             }
@@ -62,6 +63,7 @@ public class WaypointsManager {
                     Instance.getLogger().info("§a  传送点坐标: " + waypointsData.getCoordinate());
                     Instance.getLogger().info("§a  传送点所在世界: " + waypointsData.getWorld());
                     Instance.getLogger().info("§a  传送点所需权限: " + waypointsData.getPermission());
+                    Instance.getLogger().info("§a  传送点显示内容: " + waypointsData.getLore());
                 }
                 Instance.getLogger().info("§6-------------");
             }
