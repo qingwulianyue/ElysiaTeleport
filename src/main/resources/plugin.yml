@@ -2,3 +2,7 @@ name: ElysiaTeleport
 version: '${project.version}'
 main: elysia.ElysiaTeleport
 load: STARTUP
+commands:
+  ElysiaTeleport:
+    aliases:
+      - et
