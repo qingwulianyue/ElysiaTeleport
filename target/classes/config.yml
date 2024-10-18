@@ -1,0 +1,10 @@
+# 调试选项
+debug: false
+
+# 消息前缀
+prefix: "&6[传送锚点]"
+
+# 消息
+messages:
+  onOpen: "&a打开 %group% 传送界面"
+  onTeleport: "&a成功传送至 %id%"

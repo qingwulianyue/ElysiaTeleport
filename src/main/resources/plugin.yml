@@ -1,6 +1,6 @@
 name: ElysiaTeleport
 version: '${project.version}'
-main: elysia.ElysiaTeleport
+main: elysiateleport.ElysiaTeleport
 load: STARTUP
 commands:
   ElysiaTeleport:

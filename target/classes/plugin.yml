@@ -1,4 +1,8 @@
 name: ElysiaTeleport
-version: '1.0'
-main: elysia.ElysiaTeleport
+version: '1.0-SNAPSHOT'
+main: elysiateleport.ElysiaTeleport
 load: STARTUP
+commands:
+  ElysiaTeleport:
+    aliases:
+      - et
